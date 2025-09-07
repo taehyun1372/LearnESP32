@@ -1,0 +1,21 @@
+/*
+ * rgb_led.c
+ *
+ *  Created on: Sep 1, 2025
+ *      Author: taehy
+ */
+#include <stdbool.h>
+#include "driver/ledc.h"
+#include "rgb_led.h"
+/**
+ * Initializes the RGB LED settings per channel, including
+ * the GPIO for each color, mode and timer configuration.
+ */
+static void rgb_led_pwm_init(void)
+{
+	int rgb_ch;
+
+	//Red
+	ledc_ch[0].channel = LEDC_CHANNEL_0;
+
+}
